@@ -42,5 +42,5 @@ npm run preview
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
 ## Icons
-# 08/03/2023
-For icons, we have used https://github.com/07akioni/xicons#installation
+08/03/2023
+>For icons, we have used https://github.com/07akioni/xicons#installation
