@@ -50,6 +50,7 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 >For icons, we have used https://github.com/07akioni/xicons#installation
 >@vicons/tabler
 >@vicons/utils
+>vfonts
 
 ## UI Library & Components
 08/03/2023
