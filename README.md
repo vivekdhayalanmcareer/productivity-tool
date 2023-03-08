@@ -41,6 +41,10 @@ npm run preview
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
+## Readme
+08/03/2023
+> To update Readme.md file, use markdown in https://www.markdownguide.org/.
+
 ## Icons
 08/03/2023
 >For icons, we have used https://github.com/07akioni/xicons#installation
