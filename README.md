@@ -52,3 +52,8 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 >NaiveUI is used, https://www.naiveui.com/en-US/os-theme/docs/introduction
 >naive-ui
 
+## Testing Library
+08/03/2023
+> Vitest is used, https://vitest.dev/
+> vitest
+
