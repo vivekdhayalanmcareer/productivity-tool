@@ -44,3 +44,11 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 ## Icons
 08/03/2023
 >For icons, we have used https://github.com/07akioni/xicons#installation
+>@vicons/tabler
+>@vicons/utils
+
+## UI Library & Components
+08/03/2023
+>NaiveUI is used, https://www.naiveui.com/en-US/os-theme/docs/introduction
+>naive-ui
+
