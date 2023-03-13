@@ -62,3 +62,28 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 > Vitest is used, https://vitest.dev/
 > vitest
 
+# Localization
+11/03/2023
+> https://v8.i18n.nuxtjs.org/getting-started/setup
+
+> Check translation config in the repo https://github.com/epicmaxco/vuestic-ui
+
+# Color Mode
+11/03/2023
+> https://color-mode.nuxtjs.org/
+
+# Motion
+11/03/2023
+> @vueuse/motion
+
+# ORM
+13/03/2023
+> Pinia orm has to be installed
+
+# Charts
+13/03/2023
+> Apache echarts
+
+# Linting
+13/03/2023
+> Stylelint is used
