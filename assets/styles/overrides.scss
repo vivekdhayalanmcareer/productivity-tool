@@ -1,5 +1,78 @@
 :root {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
   .va-navbar {
     --va-navbar-padding-y: 0.25rem;
+
+    border-bottom: 1px solid var(--va-secondary);
+  }
+
+  .va-sidebar {
+    --va-sidebar-item-content-padding: 0.25rem;
+
+    max-width: 16rem;
+    border-right: 1px solid var(--va-secondary);
+    height: calc(100vh - 50px);
+
+    &__item {
+      &__content {
+        min-height: initial;
+        cursor: pointer;
+      }
+    }
+
+    &__title {
+      font-size: small;
+    }
+  }
+
+  .va-icon {
+    font-size: 16px !important;
+  }
+
+  .va-popover {
+    --va-popover-content-padding: 0.05rem 0.25rem 0.25rem 0.25rem;
+  }
+
+  .va-tabs {
+    --va-tabs-container-height: 1.5rem;
+    --va-tabs-slider-height: 1.5rem;
+    --va-tabs-slider-wrapper-z-index: -1;
+
+    &__container{
+      background-color: var(--va-background-border);
+      border-bottom: 1px solid var(--va-background-element);
+      border-top: 1px solid var(--va-background-element);
+    }
+  }
+
+  .va-tab {
+    &__content {
+      line-height: 2rem;
+      height: 2rem;
+      font-size: 0.75rem;
+      font-weight: lighter;
+    }
+  }
+  .va-tab::selection{
+    color: brown;
   }
 }

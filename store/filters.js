@@ -8,6 +8,11 @@ export const useFilterStore = defineStore({
     };
   },
   actions: {
-    addValueToFiltersList(value: string) {},
+    addValueToFiltersList(value) {
+      this.filtersList.push(value);
+    },
   },
+  getters: {
+    doubleCount: (state) => (state.filtersList.length) * 2,
+  }
 });
