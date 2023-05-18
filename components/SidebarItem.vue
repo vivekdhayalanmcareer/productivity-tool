@@ -14,13 +14,15 @@
                 </va-sidebar-item>
             </template>
 
-            <SidebarTasks v-if="isTasks" :showSidebar="showSidebar" :item-list="itemList.children" />
-            <SidebarProjects v-if="isProjects" :showSidebar="showSidebar" :item-list="itemList.children" />
+            <SidebarTasks v-if="isTasks" :type="type" :showSidebar="showSidebar" :item-list="itemList.children" />
+            <SidebarProjects v-if="isProjects" :type="type" :showSidebar="showSidebar" :item-list="itemList.children" />
         </va-collapse>
     </va-accordion>
     <va-divider />
 </template>
 <script setup>
+import { TYPE_TASKS, TYPE_PROJECTS } from '~~/constants/types';
+
 const props = defineProps({
     itemList: {
         type: Object,
@@ -31,9 +33,16 @@ const props = defineProps({
         default: false
     }
 })
-const accordionValue = ref([true, false]);
-const isTasks = computed(() => props.itemList && props.itemList.type === "tasks");
-const isProjects = computed(() => props.itemList && props.itemList.type === "projects");
+const accordionValue = ref([false, true]);
+const { type } = props.itemList;
+const isTasks = computed(() => type === TYPE_TASKS);
+const isProjects = computed(() => type === TYPE_PROJECTS);
+
+onMounted(() => {
+    setTimeout(() => {
+        accordionValue.value = [true, false];
+    }, 1000)
+})
 </script>
 <style lang="scss" scoped>
 .accordion {
