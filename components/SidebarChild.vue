@@ -1,5 +1,5 @@
 <template>
-    <va-sidebar-item v-for="(child, index) in childList" :key="index" class="sidebar-child">
+    <va-sidebar-item v-for="(child, index) in childList" :key="index" class="sidebar-child" :to=getPath(child.id)>
         <va-sidebar-item-content>
             <va-sidebar-item-title>
                 {{ child.title }}
@@ -12,8 +12,14 @@ const props = defineProps({
     childList: {
         type: Array,
         default: []
+    },
+    type: {
+        type: String,
+        default: ''
     }
 })
+const { type } = props;
+let getPath = (id) => `/dashboards/${type}/${id}`;
 </script>
 <style>
 .sidebar-child {

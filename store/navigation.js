@@ -1,139 +1,28 @@
 import { defineStore } from "pinia";
 
+import { TYPE_NONE } from "~~/constants/types";
+import sidebar from "~~/server/get-sidebar";
+
+
 export const useNavigationStore = defineStore({
   id: "navigatoin-store",
   state: () => {
     return {
-      sidebarItems: [
-        {
-          title: "Tasks",
-          icon: "task_alt",
-          type: "tasks",
-          children: [
-            {
-              title: "Work on Unity game",
-              icon: "dashboard",
-            },
-            {
-              title: "Make a video on second test between india and australia",
-              icon: "dashboard",
-            },
-            {
-              title: "Tasks 3",
-              icon: "dashboard",
-            },
-            {
-              title: "Tasks 3",
-              icon: "dashboard",
-            },
-            {
-              title: "Tasks 3",
-              icon: "dashboard",
-            },
-            {
-              title: "Tasks 3",
-              icon: "dashboard",
-            },
-            {
-              title: "Tasks 3",
-              icon: "dashboard",
-            },
-            {
-              title: "Tasks 3",
-              icon: "dashboard",
-            },
-            {
-              title: "Tasks 3",
-              icon: "dashboard",
-            },
-            {
-              title: "Tasks 3",
-              icon: "dashboard",
-            },
-            {
-              title: "Tasks 3",
-              icon: "dashboard",
-            },
-            {
-              title: "Tasks 11",
-              icon: "dashboard",
-            },
-            {
-              title: "Tasks 12",
-              icon: "dashboard",
-            },
-          ],
-        },
-        {
-          title: "Projects",
-          icon: "build",
-          type: "projects",
-          children: [
-            {
-              title: "Aero project",
-              icon: "dashboard",
-            },
-            {
-              title: "Satelite Hero",
-              icon: "dashboard",
-            },
-            {
-              title: "Aero project",
-              icon: "dashboard",
-            },
-            {
-              title: "Satelite Hero",
-              icon: "dashboard",
-            },
-            {
-              title: "Aero project",
-              icon: "dashboard",
-            },
-            {
-              title: "Satelite Hero",
-              icon: "dashboard",
-            },
-            {
-              title: "Aero project",
-              icon: "dashboard",
-            },
-            {
-              title: "Satelite Hero",
-              icon: "dashboard",
-            },
-            {
-              title: "Aero project",
-              icon: "dashboard",
-            },
-            {
-              title: "Satelite Hero",
-              icon: "dashboard",
-            },
-            {
-              title: "Aero project",
-              icon: "dashboard",
-            },
-            {
-              title: "Satelite Hero",
-              icon: "dashboard",
-            },
-            {
-              title: "Aero project",
-              icon: "dashboard",
-            },
-            {
-              title: "Satelite Hero 13",
-              icon: "dashboard",
-            },
-          ],
-        },
-      ],
+
+      sidebarItems: sidebar.data,
       showSidebar: true,
+      selectedType: TYPE_NONE,
+
     };
   },
   actions: {
     toggleSidebar() {
       this.showSidebar = !this.showSidebar;
     },
+
+    setSelectedType(type) {
+      this.selectedType = type;
+    },
+
   },
 });

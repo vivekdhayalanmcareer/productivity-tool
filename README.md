@@ -87,3 +87,24 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 # Linting
 13/03/2023
 > Stylelint is used
+
+# JSON Guide
+
+[Google JSON guide]https://google.github.io/styleguide/jsoncstyleguide.xml
+
+> Success
+{
+  "data": {
+    "id": 1001,
+    "name": "Wing"
+  }
+}
+
+> Error
+
+{
+  "error": {
+    "code": 404,
+    "message": "ID not found"
+  }
+}

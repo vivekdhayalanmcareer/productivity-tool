@@ -8,8 +8,14 @@ export default defineNuxtConfig({
     components: {
         global: true,
         dirs: [
+
+            { path: '~/pages/dashboards' },
+
             { path: '~/components/tooltips' },
             '~/components',
         ]
     },
+
+    pages: true
+
 })

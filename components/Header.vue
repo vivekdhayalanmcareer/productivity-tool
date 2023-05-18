@@ -6,10 +6,6 @@
                     <va-button color="backgroundPrimary" @click="toggleSidebar">
                         <va-icon name="menu" />
                     </va-button>
-                    <!-- <template #icon>
-                        <va-button icon="create" size="small" />
-                    </template> -->
-
                     <template #body>
                         <Shortcut />
                     </template>
@@ -19,7 +15,6 @@
         <template #right>
         </template>
     </va-navbar>
-    <Sidebar />
 </template>
 <script setup>
 import { storeToRefs } from 'pinia';
