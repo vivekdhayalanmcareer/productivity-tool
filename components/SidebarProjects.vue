@@ -1,6 +1,6 @@
 <template>
     <div v-if="showSidebar && itemList" class="tabs-content">
-        <SidebarChild :child-list="itemList" />
+        <SidebarChild :type="type" :child-list="itemList" />
     </div>
 </template>
 <script setup>
@@ -9,11 +9,16 @@ const props = defineProps({
         type: Object,
         default: {}
     },
+    type: {
+        type: String,
+        default: ''
+    },
     showSidebar: {
         type: Boolean,
         default: false
     }
 })
+const { type } = props;
 </script>
 <style>
 .tabs-content {

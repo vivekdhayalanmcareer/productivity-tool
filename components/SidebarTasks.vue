@@ -7,7 +7,7 @@
         </template>
     </va-tabs>
     <div v-if="showSidebar && itemList" class="tabs-content">
-        <SidebarChild v-if="isPending" :child-list="itemList" />
+        <SidebarChild :type="type" v-if="isPending" :child-list="itemList" />
     </div>
 </template>
 <script setup>
@@ -16,11 +16,16 @@ const props = defineProps({
         type: Object,
         default: {}
     },
+    type: {
+        type: String,
+        default: ''
+    },
     showSidebar: {
         type: Boolean,
         default: false
     }
 })
+const { type } = props;
 const tabValue = ref(1);
 const isPending = computed(() => tabValue.value === 0);
 </script>
