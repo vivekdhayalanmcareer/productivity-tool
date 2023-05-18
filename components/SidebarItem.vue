@@ -33,6 +33,7 @@ const props = defineProps({
         default: false
     }
 })
+
 const accordionValue = ref([false, true]);
 const { type } = props.itemList;
 const isTasks = computed(() => type === TYPE_TASKS);
