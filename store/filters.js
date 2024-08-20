@@ -13,6 +13,6 @@ export const useFilterStore = defineStore({
     },
   },
   getters: {
-    doubleCount: (state) => (state.filtersList.length) * 2,
-  }
+    doubleCount: (state) => state.filtersList.length * 2,
+  },
 });
