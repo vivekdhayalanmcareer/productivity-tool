@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 import { TYPE_NONE } from "~~/constants/types";
-import ProjectsClient from "@client-lib/projects/projects-client";
+import ProjectsClient from "~~/client-lib/projects/projects-client";
 
 export const useCommonStore = defineStore({
   id: "common-store",

@@ -2,7 +2,7 @@ import { useFetch } from "@vueuse/core";
 import { useCommonStore } from "../store/common";
 import { get } from "lodash";
 import axios from "axios";
-import { GET } from "@client-lib/constants";
+import { GET } from "~~/client-lib/constants";
 class BaseClient {
   constructor() {
     this.base_url = "http://localhost:3000/";

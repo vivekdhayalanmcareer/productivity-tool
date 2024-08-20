@@ -1,4 +1,4 @@
-import BaseClient from "@client-lib/base-client";
+import BaseClient from "~~/client-lib/base-client";
 
 class ProjectsClient extends BaseClient {
   constructor() {

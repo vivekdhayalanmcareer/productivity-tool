@@ -14,11 +14,12 @@ export default defineNuxtConfig({
       { path: "~/pages/dashboards" },
       { path: "~/components/tooltips" },
       "~/components",
+      "~/client-lib",
     ],
   },
-  alias: {
-    "@client-lib": resolve(__dirname, "./client-lib"),
-  },
+  // alias: {
+  //   "@client-lib": resolve(__dirname, "./client-lib"),
+  // },
   globalLoader: {
     background: "#000",
     foreground: "#fff",
