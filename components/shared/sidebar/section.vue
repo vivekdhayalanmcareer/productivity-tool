@@ -1,11 +1,9 @@
 <template>
-  <va-accordion v-model="accordionValue" class="accordion" aria-disabled="true">
+  <va-accordion v-model="accordionValue" aria-disabled="true">
     <va-collapse :class="{ expanded: accordionValue }">
       <template #header>
         <va-sidebar-item>
-          <va-sidebar-item-content
-            style="border-bottom: 1px solid var(--va-shadow)"
-          >
+          <va-sidebar-item-content>
             <va-icon :name="itemList.icon" />
             <va-sidebar-item-title>
               {{ itemList.title }}
@@ -18,7 +16,10 @@
         </va-sidebar-item>
       </template>
 
-      <SidebarTasks
+      <List />
+      <!-- <List v-if="isTasks" /> -->
+
+      <!-- <SidebarTasks
         v-if="isTasks"
         :type="type"
         :showSidebar="showSidebar"
@@ -29,10 +30,10 @@
         :type="type"
         :showSidebar="showSidebar"
         :item-list="itemList.children"
-      />
+      /> -->
     </va-collapse>
   </va-accordion>
-  <va-divider />
+  <!-- <va-divider /> -->
 </template>
 <script setup>
 import { TYPE_TASKS, TYPE_PROJECTS } from "~~/constants/types";
@@ -54,14 +55,12 @@ const isTasks = computed(() => type === TYPE_TASKS);
 const isProjects = computed(() => type === TYPE_PROJECTS);
 
 onMounted(() => {
-  setTimeout(() => {
-    accordionValue.value = [true, false];
-  }, 1000);
+  accordionValue.value = [true, false];
 });
 </script>
 <style lang="scss" scoped>
 .accordion {
-  height: 35vh;
+  height: 33vh;
   overflow: hidden;
 }
 
@@ -74,5 +73,8 @@ onMounted(() => {
 
 .expanded {
   background-color: var(--va-background-primary);
+}
+.sidebar-item-content {
+  border-top: 1px solid var(--va-shadow);
 }
 </style>

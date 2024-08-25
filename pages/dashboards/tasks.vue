@@ -1,10 +1,11 @@
 <template>
-  <p>{{ project_id }}</p>
+  <Container />
 </template>
 <script setup>
-import { storeToRefs } from "pinia";
 import { useProjectStore } from "~~/store/projects";
 const projectStore = useProjectStore();
 const route = useRoute();
-const { project_id } = route?.query;
+onMounted(() => {
+  // projectStore.setId(route.params.id);
+});
 </script>

@@ -27,6 +27,7 @@
     "echarts": "^5.4.1",
     "http-status-codes": "^2.3.0",
     "lodash": "^4.17.21",
+    "notivue": "^2.4.4",
     "pinia": "^2.0.33",
     "sass": "^1.58.3",
     "vue-global-loader": "^0.9.9",

@@ -4,11 +4,12 @@
     minimized-width="48px"
     color="backgroundPrimary"
   >
-    <SidebarItem
+    <Section
       v-for="(item, idx) in sidebarItems"
       :key="idx"
       :item-list="item"
       :showSidebar="showSidebar"
+      style="border-bottom: 1px solid var(--va-shadow)"
     />
   </va-sidebar>
 </template>
@@ -20,11 +21,12 @@ const { displayLoader, destroyLoader } = useGlobalLoader();
 const commonStore = useCommonStore();
 const { sidebarItems, showSidebar } = storeToRefs(commonStore);
 const loader = computed(() => commonStore.loader);
-console.log(loader.value);
+console.log(loader.value, 2);
 
 watch(
   () => loader.value,
   (newValue, oldValue) => {
+    console.log(1);
     newValue ? displayLoader() : destroyLoader();
   }
 );
