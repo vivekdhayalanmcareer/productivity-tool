@@ -1,4 +1,9 @@
 :root {
+
+  body {
+    margin: 0px;
+  }
+
   /* width */
   ::-webkit-scrollbar {
     width: 3px;
@@ -22,17 +27,23 @@
   .va-navbar {
     --va-navbar-padding-y: 0.25rem;
 
-    border-bottom: 1px solid var(--va-secondary);
+    border-bottom: 1px solid var(--va-background-border);
+
+    height: 34px;
+    min-width: unset;
+    width: calc(100% - 2rem);
   }
 
   .va-sidebar {
     --va-sidebar-item-content-padding: 0.25rem;
 
-    max-width: 16rem;
-    border-right: 1px solid var(--va-secondary);
+    // max-width: 16rem;
+    border-right: 1px solid var(--va-background-border);
     height: calc(100vh - 0px);
 
     &__item {
+      border-left: none;
+      padding-right: 0px;
       &__content {
         min-height: initial;
         cursor: pointer;
