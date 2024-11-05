@@ -1,110 +1,36 @@
-# Nuxt 3 Minimal Starter
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Getting Started
 
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
+First, run the development server:
 
 ```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## Production
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Build the application for production:
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-```bash
-npm run build
-```
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Locally preview production build:
+## Learn More
 
-```bash
-npm run preview
-```
+To learn more about Next.js, take a look at the following resources:
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Readme
-08/03/2023
-> To update Readme.md file, use markdown in https://www.markdownguide.org/.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Icons
-08/03/2023
->For icons, we have used https://github.com/07akioni/xicons#installation
->@vicons/tabler
->@vicons/utils
->vfonts
+## Deploy on Vercel
 
-## UI Library & Components
-08/03/2023
->NaiveUI is used, https://www.naiveui.com/en-US/os-theme/docs/introduction
->naive-ui
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## Testing Library
-08/03/2023
-> Vitest is used, https://vitest.dev/
-> vitest
-
-# Localization
-11/03/2023
-> https://v8.i18n.nuxtjs.org/getting-started/setup
-
-> Check translation config in the repo https://github.com/epicmaxco/vuestic-ui
-
-# Color Mode
-11/03/2023
-> https://color-mode.nuxtjs.org/
-
-# Motion
-11/03/2023
-> @vueuse/motion
-
-# ORM
-13/03/2023
-> Pinia orm has to be installed
-
-# Charts
-13/03/2023
-> Apache echarts
-
-# Linting
-13/03/2023
-> Stylelint is used
-
-# JSON Guide
-
-[Google JSON guide]https://google.github.io/styleguide/jsoncstyleguide.xml
-
-> Success
-{
-  "data": {
-    "id": 1001,
-    "name": "Wing"
-  }
-}
-
-> Error
-
-{
-  "error": {
-    "code": 404,
-    "message": "ID not found"
-  }
-}
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
