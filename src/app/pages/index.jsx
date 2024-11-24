@@ -21,7 +21,7 @@ const Main = () => {
   return (
     <div className="layout-container">
       <div className="left-sidebar"></div>
-      <div className="content">{value}</div>
+      <div className="content">{value} - test</div>
       <div className="right-sidebar">3</div>
     </div>
   );
