@@ -1,0 +1,41 @@
+@use "variables" as v;
+
+.header {
+  background-color: v.$primary-bg-color;
+  color: v.$primary-font-color;
+  height: 35px;
+  width: 100%;
+  font-family: "fontRegular";
+  line-height: 35px;
+  height: 35px;
+  border-bottom: v.$primary-border;
+
+  &-slot {
+    &-left {
+      float: left;
+      width: v.$split-33;
+      padding: 0 10px 0 10px;
+    }
+
+    &-middle {
+      float: left;
+      width: v.$split-33;
+      padding: 0 10px 0 10px;
+      &-title {
+        font-family: "fontBold";
+        line-height: 35px;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        font-size: large;
+      }
+    }
+
+    &-right {
+      float: left;
+      text-align: right;
+      width: v.$split-33;
+      padding: 0 10px 0 10px;
+    }
+  }
+}

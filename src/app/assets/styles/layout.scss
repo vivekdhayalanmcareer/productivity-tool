@@ -1,0 +1,27 @@
+@use "variables" as v;
+
+.layout-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: transparent;
+  height: calc(100vh - 100px);
+
+  .left-sidebar,
+  .content,
+  .right-sidebar {
+    background-color: v.$primary-bg-color;
+    border: v.$primary-border;
+    margin: 5px;
+  }
+  .left-sidebar {
+    width: 10%;
+  }
+  .content {
+    width: 80%;
+    border-radius: 10px;
+    color: red;
+  }
+  .right-sidebar {
+    width: 10%;
+  }
+}

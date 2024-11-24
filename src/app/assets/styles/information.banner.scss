@@ -1,0 +1,19 @@
+.info-banner {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: red;
+
+  &-message {
+    font-family: "fontMedium";
+    text-align: center;
+    padding: 15px;
+    cursor: default;
+
+    svg {
+      // margin-bottom: -3px;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+  }
+}
